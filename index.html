@@ -3,12 +3,45 @@
   <head>
     <meta charset="utc-8">
     <title>Exercise 6: Navigation</title>
+    <!-- Created by Amara Damji on October 28 --->
     <!-- This is code to embed/employ Google Fonts in the site design, we'll learn more about this next week--->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- End of Google Fonts embed--->
     <style>
+      #nav ul {
+        list-style-type: none;
+        /* Remove bullets */
+        padding: 0;
+        margin: 0;
+        display: flex;
+        /* Display items in a row */
+        justify-content: space-around;
+        /* Space items evenly */
+      }
+
+      #nav ul li {
+        margin: 0 10px;
+        /* Optional spacing between items */
+      }
+
+      #nav ul li a {
+        text-decoration: none;
+        /* Remove underline */
+        color: #666666;
+        /* Initial color */
+        font-weight: 500;
+        font-size: 18px;
+        transition: color 0.3s;
+        /* Smooth color change on hover */
+      }
+
+      #nav ul li a:hover {
+        color: #de6581;
+        /* Change color on hover */
+      }
+
       #header,
       .courses,
       #footer,
@@ -121,9 +154,14 @@
       <div id="header">
         <h1>Yoko's Kitchen</h1>
         <div id="nav">
-          <!--
-                    Instructions: Add a list using the <ul> element and the <li> element to create a link for each menu item. Set the href value to empty. Normally you would put the relative path of page you are linking to, but we are creating a placeholder.
-                    -->
+
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Classes</a></li>
+            <li><a href="/">Catering</a></li>
+            <li><a href="/">About</a></li>
+          </ul>
+
         </div>
       </div>
       <div class="courses">
