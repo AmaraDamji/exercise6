@@ -13,21 +13,22 @@
       ul {
         background-color: #333333;
         list-style-type: none;
-        padding: 10;
         margin: 0;
-        height: 10px;
-        display: flex;
-        justify-content: space-around;
+        padding: 0;
+        overflow: hidden;
+
+      }
+
+      li {
+        float: left;
       }
 
       li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 4px 16px;
         text-decoration: none;
-        color: #FFFFFF;
-        font-weight: 500;
-        font-size: 18px;
-        transition: color 0.3s;
-        position: relative;
-        top: -3px;
       }
 
       li a:hover {
